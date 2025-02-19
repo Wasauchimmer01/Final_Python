@@ -1,0 +1,56 @@
+{
+    "simulations": {
+      "sim1": {
+        "description": "Basic simulation with two zones and simple airflow.",
+        "zones": ["Room1", "Room2"],
+        "airflowPaths": ["Door_Room1_Room2"],
+        "simulationParameters": {
+          "SimulationTime": 3600,
+          "VentilationRate": 5.0
+        },
+        "contaminant": {
+          "SourceZone": "Room1",
+          "ReleaseRate": 10.0
+        },
+        "output": {
+          "OutputFile": "sim1_results.txt",
+          "LogFile": "sim1_log.txt"
+        }
+      },
+      "sim2": {
+        "description": "Enhanced simulation with increased ventilation and a higher contaminant release in Room1.",
+        "zones": ["Room1", "Room2"],
+        "airflowPaths": ["Door_Room1_Room2"],
+        "simulationParameters": {
+          "SimulationTime": 3600,
+          "VentilationRate": 8.0
+        },
+        "contaminant": {
+          "SourceZone": "Room1",
+          "ReleaseRate": 12.0
+        },
+        "output": {
+          "OutputFile": "sim2_results.txt",
+          "LogFile": "sim2_log.txt"
+        }
+      },
+      "sim3": {
+        "description": "Complex simulation with three zones and multiple airflow paths.",
+        "zones": ["Room1", "Room2", "Room3"],
+        "airflowPaths": ["Door_Room1_Room2", "Door_Room2_Room3"],
+        "simulationParameters": {
+          "SimulationTime": 3600,
+          "VentilationRate": 6.0
+        },
+        "contaminant": {
+          "SourceZone": "Room2",
+          "ReleaseRate": 15.0
+        },
+        "output": {
+          "OutputFile": "sim3_results.txt",
+          "LogFile": "sim3_log.txt"
+        }
+      }
+    }
+  }
+  

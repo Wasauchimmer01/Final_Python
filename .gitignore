@@ -7,3 +7,21 @@ __pycache__
 *.venv
 
 *.vscode
+
+*.log
+
+*csm
+
+*.ebw
+
+*.ach
+
+*.rst
+
+*.sqlite3
+
+*.srf
+
+*.xlog
+
+*.sim
